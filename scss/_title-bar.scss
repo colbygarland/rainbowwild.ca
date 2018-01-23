@@ -1,0 +1,19 @@
+.title-bar {
+  
+  background:$gradient;
+  margin-left:-15px;
+  margin-right:-15px;
+  padding:20px;
+  
+}
+
+.title-bar-title {
+  
+  color:#fff;
+  margin-bottom:20px;
+  
+  @media (min-width:768px){
+    margin-bottom:0;
+  }
+  
+}

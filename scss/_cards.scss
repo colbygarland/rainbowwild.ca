@@ -1,0 +1,33 @@
+.card-img-top {
+  
+  height:200px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius:0!important;
+  
+}
+
+.card-footer {
+  
+  border:none!important;
+  background:none!important;
+  
+}
+
+.card {
+  
+  border-radius:0!important;
+  margin-bottom:30px!important;
+  
+}
+
+.cards {
+  
+  margin-bottom:30px;
+  
+  &.overlap {
+    margin-top:-100px;
+  }
+  
+}

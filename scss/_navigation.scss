@@ -7,7 +7,7 @@
   width:200px;
   padding-left:0;
   list-style: none;
-  background:$primary;
+  background:$gradient;
   transition:background 0.5s;
   margin:0;
   z-index:1090;
@@ -30,7 +30,7 @@
       display:block;
       text-transform: uppercase;
       padding:1em;
-      background:$primary;
+      //background:$primary;
       color:#fff;
       text-decoration:none;
       transition:background 0.5s;
@@ -40,7 +40,8 @@
     &.current_page_item, &.current_page_parent, &:hover, &:focus, &:active {
 
       > a {
-        background:$secondary;
+        background:#fff;
+        color:$text-color;
       }
 
       ul.children {
@@ -68,7 +69,8 @@
         &:hover, &:active, &:focus, &.current_page_item {
 
           a {
-            background:$secondary;
+            background:#fff;
+            color:$text-color;
           }
 
         }
@@ -86,8 +88,7 @@
 
   .menu-social-media {
 
-    background:$primary;
-    position: relative;
+    @include flexbox();
 
   }
 
@@ -102,6 +103,7 @@
     padding-left:5vw;
     margin:0;
     height:60px;
+    margin-top:15px;
 
     li {
 
@@ -112,15 +114,14 @@
 
       a {
         text-transform:uppercase;
-        color:#fff;
+        color:$text-color;
         transition:0.3s;
-        font-family:$font-gothic;
       }
 
       &:hover, &:active, &:focus {
 
         > a {
-          color:$text-color;
+          color:$primary;
         }
 
         ul.children {
@@ -132,7 +133,7 @@
       }
 
       &.current_page_item a {
-        color:$text-color;
+        color:$primary;
       }
 
       ul.children {

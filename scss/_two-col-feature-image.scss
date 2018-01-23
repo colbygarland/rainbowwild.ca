@@ -1,0 +1,38 @@
+.two-col-feature-image {
+  
+  margin-top:$padding-mobile;
+  margin-bottom:$padding-mobile;
+  
+  @media (min-width:768px){
+    margin:0;
+  }
+  
+}
+
+.col-feature-image {
+  
+  height:500px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  
+  @media (min-width:768px){
+    min-height:500px;
+    height:auto;
+  }
+  
+}
+
+.col-feature-text {
+  
+  @media (min-width:768px){
+    
+    padding:30px;
+    
+  }
+  
+  @media (min-width:992px){
+    
+  }
+  
+}
