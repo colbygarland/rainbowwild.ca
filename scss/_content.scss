@@ -2,5 +2,10 @@
 
   padding-top:$padding-mobile;
   padding-bottom:$padding-mobile;
+  
+  @media (min-width:992px){
+    padding-top:$padding-desktop;
+    padding-bottom:$padding-desktop;
+  }
 
 }

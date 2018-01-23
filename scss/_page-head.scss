@@ -3,19 +3,16 @@
 header {
 
   position:relative;
-  padding-top:50px;
 
   &:before {
-    //content:'';
-    background:$primary;
+    content:'';
+    background:$gradient;
     height:15px;
     width:100%;
     display:block;
   }
 
   @media (min-width:992px){
-
-    padding-top:20px;
     
     > .container {
       @include flexbox();
@@ -55,6 +52,7 @@ h1.title, h2.title {
     margin-bottom:20px;
     height:82px;
     width:200px;
+    margin-top:20px;
     
   }
 
@@ -100,7 +98,7 @@ h1.title, h2.title {
     margin:0;
     padding-top:10px;
     padding-bottom:10px;
-    margin-top:18px;
+    margin-top:38px;
 
   }
   

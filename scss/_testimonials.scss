@@ -1,0 +1,20 @@
+.testimonials {
+  
+  padding-top:50px;
+  
+  @media (min-width:768px){
+    padding-top:80px;
+  }
+  
+}
+
+.testie {
+  
+  margin-bottom:30px;
+  color:#fff;
+  
+  .blockquote-footer {
+    color:#fff;
+  }
+  
+}

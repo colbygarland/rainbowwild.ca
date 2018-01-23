@@ -2,7 +2,9 @@
 
 $primary: #57bbbf;
 $secondary: #d8d3cb;
-$teal: #71b9a2;
+$tertiary:#05d5ff;
+$quad:#a6ffcb;
+$teal:$tertiary;
 $font-headers: 'Open Sans', sans-serif;
 $font-body: 'Open Sans', sans-serif;
 $bold: 700;
@@ -13,7 +15,7 @@ $bg:#eeeeee;
 $grey:#585757;
 $padding-mobile:50px;
 $padding-desktop:100px;
-$gradient:linear-gradient(150deg,$primary 15%,#05d5ff 70%,#a6ffcb 94%);
+$gradient:linear-gradient(150deg,$primary 15%, $tertiary 70%, $quad 94%);
 $gradient-reverse:linear-gradient(150deg,#a6ffcb 15%,#05d5ff 70%,$primary 94%);
 
 // Boilerplate code

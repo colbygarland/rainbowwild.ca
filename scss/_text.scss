@@ -70,6 +70,19 @@ p {
     
   }
   
+  &.btn-tertiary {
+    
+    background:$tertiary;
+    color:#fff;
+    border-color:$tertiary;
+    
+    &:hover, &:active, &:focus {
+      background:none;
+      color:$tertiary;
+    }
+    
+  }
+  
   &.btn-gradient {
     
     background:$gradient;
@@ -82,4 +95,8 @@ p {
     
   }
   
+}
+
+.center, .centre {
+  text-align:center;
 }
