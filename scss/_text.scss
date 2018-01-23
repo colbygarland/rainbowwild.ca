@@ -1,0 +1,37 @@
+body {
+
+  font-family:$font-body;
+  font-size:20px;
+  background:$bg;
+  overflow-x:hidden;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+
+  font-family:$font-gothic;
+
+}
+
+h1 {
+  font-size:calc(32px + 2vw);
+  margin-bottom:30px;
+  color:$grey;
+  text-transform: uppercase;
+}
+
+a {
+
+  color:$text-color;
+  transition:0.3s;
+
+  &:hover, &:active, &:focus {
+    color:$hover-color;
+    text-decoration: none;
+  }
+
+}
+
+p {
+  line-height:1.8;
+}

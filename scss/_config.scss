@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display');
+
+$primary: #808000;
+$secondary: #d8d3cb;
+$teal: #71b9a2;
+$font-playfair:'Playfair Display', serif;
+$font-headers: 'Century Gothic', sans-serif;
+$font-gothic:'Century Gothic', sans-serif;
+$font-body: 'Open Sans', sans-serif;
+$text-color:#111111;
+$hover-color:$primary;
+$bg:#eeeeee;
+$grey:#717171;
+
+// Boilerplate code
+
+.ir {
+
+  display:block;
+  text-indent:200%;
+  white-space:nowrap;
+  overflow:hidden;
+
+}
+
+* {
+  box-sizing:border-box;
+}
+
+img {
+
+  max-width:100%;
+  height:auto;
+
+}
+
+.row {
+  margin:0;
+}
+
+@mixin flexbox() {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+}
+
+::selection {
+    background: $teal;
+}
