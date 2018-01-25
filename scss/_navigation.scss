@@ -86,6 +86,15 @@
 // DESKTOP MENU
 @media (min-width: 992px) {
 
+  
+  .mobile-menu {
+    display:none;
+  }
+  
+  .site-wrap {
+    left:auto!important;
+  }
+  
   .menu-social-media {
 
     @include flexbox();
@@ -149,13 +158,15 @@
         visibility: hidden;
         z-index:1;
         background:$primary;
-        padding:10px;
+        min-width:200px;
 
         li {
 
           margin:0;
-          margin-bottom:15px;
           height:auto;
+          padding-top:10px;
+          padding-bottom:10px;
+          transition:0.3s;
 
           &:last-child {
             margin-bottom:0;
@@ -166,6 +177,16 @@
             font-size:16px;
             text-transform:none;
             font-family:$font-body;
+            color:#fff;
+            padding-left:10px;
+            padding-right:10px;
+          }
+          
+          &:hover, &:active, &:focus {
+            background:#fff;
+            a {
+              color:$primary;
+            }
           }
 
         }

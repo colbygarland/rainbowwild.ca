@@ -2414,12 +2414,19 @@ p {
 
 footer {
   background: #57bbbf;
-  font-size: 15px;
-  padding-top: 10px;
-  padding-bottom: 10px; }
-  footer p {
+  padding-top: 25px;
+  padding-bottom: 25px; }
+  footer p, footer a {
     margin-bottom: 0;
     color: #fff; }
+  footer a:hover, footer a:active, footer a:focus {
+    color: #d8d3cb; }
+  footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+    color: #fff; }
+  footer .bottom-spacer {
+    margin-bottom: 30px; }
+  footer .form-control {
+    border: 2px solid #fff; }
 
 @font-face {
   font-family: "Rounded Elegance";
@@ -2638,6 +2645,12 @@ footer {
           color: #111111; }
 
 @media (min-width: 992px) {
+  .mobile-menu {
+    display: none; }
+
+  .site-wrap {
+    left: auto !important; }
+
   .menu-social-media {
     display: -ms-flexbox;
     display: flex;
@@ -2687,18 +2700,27 @@ footer {
         visibility: hidden;
         z-index: 1;
         background: #57bbbf;
-        padding: 10px; }
+        min-width: 200px; }
         .menu li ul.children li {
           margin: 0;
-          margin-bottom: 15px;
-          height: auto; }
+          height: auto;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          transition: 0.3s; }
           .menu li ul.children li:last-child {
             margin-bottom: 0; }
           .menu li ul.children li a {
             display: block;
             font-size: 16px;
             text-transform: none;
-            font-family: "Open Sans", sans-serif; } }
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            padding-left: 10px;
+            padding-right: 10px; }
+          .menu li ul.children li:hover, .menu li ul.children li:active, .menu li ul.children li:focus {
+            background: #fff; }
+            .menu li ul.children li:hover a, .menu li ul.children li:active a, .menu li ul.children li:focus a {
+              color: #57bbbf; } }
 .content {
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -2788,3 +2810,8 @@ footer {
   color: #fff; }
   .testie .blockquote-footer {
     color: #fff; }
+
+.form-control {
+  background: none;
+  border-radius: 0;
+  border: 2px solid #000; }
