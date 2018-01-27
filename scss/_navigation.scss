@@ -98,6 +98,7 @@
   .menu-social-media {
 
     @include flexbox();
+    justify-content: flex-end;
 
   }
 

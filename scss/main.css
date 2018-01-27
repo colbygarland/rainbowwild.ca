@@ -2236,30 +2236,29 @@ header {
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+      flex-wrap: nowrap;
       justify-content: space-between; } }
 
 h1.title, h2.title {
   position: relative;
-  width: 280px;
-  height: 90px;
+  width: 210px;
+  height: 40px;
   display: block;
   margin: 0 auto;
   z-index: 1;
-  margin-bottom: 40px; }
+  margin-top: 40px;
+  margin-bottom: 20px; }
   h1.title a, h2.title a {
     height: inherit;
     width: inherit;
-    background-image: url(../img/logo-placeholder.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    font-size: 0; }
+    font-size: 30px;
+    text-transform: uppercase;
+    display: block;
+    text-align: center; }
   @media (min-width: 992px) {
     h1.title, h2.title {
       margin-left: 0;
       margin-bottom: 20px;
-      height: 82px;
-      width: 200px;
       margin-top: 20px; } }
 
 .menu {
@@ -2338,6 +2337,12 @@ p {
     .btn.btn-black:hover, .btn.btn-black:active, .btn.btn-black:focus {
       background: none;
       color: #111; }
+  .btn.btn-primary {
+    background: #57bbbf;
+    border-color: #57bbbf; }
+    .btn.btn-primary:hover, .btn.btn-primary:active, .btn.btn-primary:focus {
+      background: #05d5ff;
+      border-color: #05d5ff; }
   .btn.btn-ghost-white {
     background: none;
     border-color: #fff;
@@ -2361,6 +2366,14 @@ p {
 
 .center, .centre {
   text-align: center; }
+
+.horizontal-list {
+  padding-left: 0;
+  list-style: none;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .feature-photo {
   margin-left: -15px;
@@ -2393,7 +2406,7 @@ p {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 22px;
-  color: #585757;
+  color: #3a3939;
   margin-top: 20px;
   margin-bottom: 20px; }
   @media (min-width: 992px) {
@@ -2438,8 +2451,8 @@ footer {
   src: local("gothic"), url("../fonts/gothic.woff") format("woff"), url("../fonts/gothic.ttf") format("truetype"); }
 .menubtn {
   position: absolute;
-  top: 50px;
-  left: 20px;
+  top: 37px;
+  left: 10px;
   z-index: 2010; }
 
 #nav-trigger {
@@ -2656,7 +2669,8 @@ footer {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    justify-content: flex-end; }
 
   .menu {
     display: -ms-flexbox;
@@ -3534,3 +3548,7 @@ footer {
   transform: perspective(2500px) rotateX(0); }
 
 /*# sourceMappingURL=aos.css.map*/
+.booking-buttons {
+  justify-content: center; }
+  .booking-buttons .btn {
+    margin: 8px; }

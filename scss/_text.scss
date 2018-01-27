@@ -57,6 +57,18 @@ p {
     
   }
   
+  &.btn-primary {
+    
+    background:$primary;
+    border-color:$primary;
+    
+    &:hover, &:active, &:focus {
+      background:$tertiary;
+      border-color:$tertiary;
+    }
+    
+  }
+  
   &.btn-ghost-white {
     
     background:none;
@@ -99,4 +111,12 @@ p {
 
 .center, .centre {
   text-align:center;
+}
+
+.horizontal-list {
+  
+  padding-left:0;
+  list-style:none;
+  @include flexbox();
+  
 }
